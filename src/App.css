@@ -1,0 +1,614 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed; /* Make it fixed to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;
+  background-color: #fff; /* White background */
+  color: #000000;
+  padding: 10px 20px;
+  z-index: 1000; /* Ensure it stays above other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #676767;
+}
+
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('C:\Users\Vishal Orsu\portfolio\public\pxfuel.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000000;
+  background: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background: #f1f1f1;
+}
+
+/* Section Styles */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.section p,
+.section ul {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin: 10px 0;
+}
+/* Footer */
+footer {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-content h2 {
+    font-size: 2rem;
+  }
+
+  .header-content p {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 30px 20px;
+  }
+}
+/* General Section Styling */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Alternating Background Colors */
+section:nth-child(odd) {
+  background-color: #f9f9f9; /* Light gray for odd sections */
+}
+
+section:nth-child(even) {
+  background-color: #ffffff; /* White for even sections */
+}
+
+/* Section Headings */
+section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #000000; /* Add a distinct color for headings */
+  text-transform: uppercase;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+/* About Section */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin: 0;
+  color: #0056b3;
+  text-align: center;
+  display: inline-block; /* Border only as wide as text */
+  border-bottom: 2px solid #ccc; /* Add border */
+  padding-bottom: 5px; /* Space between text and border */
+}
+
+.about-content {
+  display: flex; /* Use flex to align items side by side */
+  align-items: center; /* Vertically center the items */
+  justify-content: flex-start; /* Align the items to the start */
+  text-align: left;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.about-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-left: 20px; /* Space between image and text */
+  text-align: justify; /* Justify the text */
+}
+
+.profile-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Ensure the photo is a perfect circle */
+  object-fit: cover; /* Crop and scale the image to fit the circle */
+  border-radius: 50%; /* Make the image rounded */
+  border: 3px solid #ccc; /* Optional border around the photo */
+  margin-right: 40px; /* Increase this value to add more space between the image and text */
+}
+
+/* Responsive Styling for About Section */
+@media (max-width: 768px) {
+  #about {
+    text-align: center;
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack the image and text vertically on smaller screens */
+    align-items: center;
+  }
+
+  .about-content p {
+    text-align: justify; /* Keep text justified on smaller screens */
+    margin-left: 0; /* Remove the left margin for smaller screens */
+  }
+
+  .profile-photo {
+    margin-right: 0; /* Remove the right margin on smaller screens */
+    margin-bottom: 200px; /* Add space below the image */
+  }
+}
+
+/* Contact Section Specific Styles */
+#contact {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Side-by-side fields container */
+.inline-fields {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Individual form groups for inline fields */
+.inline-fields .form-group {
+  flex: 1; /* Ensures both fields take equal width */
+  display: flex;
+  flex-direction: column;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0px 0px 5px rgba(153, 153, 153, 0.5);
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Button Styles */
+.cta-button {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px rgb(164, 90, 255);
+}
+
+/* Card Style for the Form */
+#contact form {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #contact {
+    padding: 20px;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+  }
+}
+/* Skills Section */
+#skills {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+#skills h2 {
+  font-size: 2rem;
+  color: #0056b3;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* Exactly 7 skills per line */
+  gap: 10px; /* Add 10px space between each box */
+  justify-content: center; /* Center the grid horizontally */
+}
+
+.skill-box {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 10px 5px;
+  font-size: 0.9rem;
+  color: #333;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-3px); /* Slight lift effect on hover */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Display 2 skills per line on smaller screens */
+    gap: 8px; /* Slightly smaller gap for mobile */
+  }
+
+  .skill-box {
+    font-size: 0.8rem; /* Smaller font for compact mobile view */
+  }
+}
+/* Experience Section */
+#experience {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#experience h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0056b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.experience-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+}
+
+.experience-grid::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ccc 0,
+    #ccc 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.experience-box {
+  width: 45%;
+  background: #ededed;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 20px;
+  text-align: left;
+  z-index: 2; /* Ensure boxes are above the dotted line */
+}
+
+.experience-box h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.experience-box p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0 15px;
+}
+
+.experience-box ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #444;
+  padding-left: 20px;
+}
+
+.experience-box ul li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.experience-box ul li::before {
+  content: "•"; /* Bullet point */
+  color: #0056b3;
+  font-weight: bold;
+  position: absolute;
+  left: -15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .experience-grid {
+    flex-direction: column;
+  }
+
+  .experience-grid::before {
+    display: none; /* Remove dotted line on small screens */
+  }
+
+  .experience-box {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+/* Education Section */
+
+
+/* Education Section Styling */
+
+
+#education h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0056b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.education-container {
+  display: flex;
+  color: #ffffff;
+  flex-direction: column;
+  gap: 20px; /* Space between entries */
+  align-items: center;
+}
+
+.education-entry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.education-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px; /* Squared image with rounded corners */
+  border: 2px solid #ddd;
+}
+
+.education-details {
+  text-align: left;
+}
+
+.education-details h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #0056b3;
+}
+
+.education-details p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #0056b3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  display: inline-block;
+}
+.project-box {
+  display: flex;
+  align-items: flex-start; /* Align content to the top */
+  gap: 2rem; /* Space between image and text */
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px; /* Optional: Adjust the max-width to control the container size */
+  margin: 1rem auto; /* Add vertical spacing between projects */
+}
+
+.project-image img {
+  width: 250px; /* Set a fixed width for consistency */
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column; /* Ensure text is stacked */
+  justify-content: center; /* Center-align text vertically */
+}
+
+.project-details h3 {
+  text-align: left;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.project-details ul {
+  padding-left: 1.5rem;
+  margin-top: 0.5rem; /* Add space between title and list */
+}
+
+.project-details li {
+  margin-bottom: 0.5rem;
+}
+
+
