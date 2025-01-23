@@ -131,21 +131,40 @@ const App = () => {
       {/* Projects Section */}
       <section id="projects" className="section">
         <h2>Projects</h2>
-        <div>
-          <h3>Credit Card Fraud Detection Enhancement</h3>
-          <ul>
-            <li>Integrated geospatial analysis, reducing false positives by 25%.</li>
-            <li>Utilized Azure Databricks and PySpark for faster model training.</li>
-            <li>Documented system requirements and test cases for stakeholder review.</li>
-          </ul>
-        </div>
-        <div>
-          <h3>SpaceX Falcon 9 First Stage Landing Prediction</h3>
-          <ul>
-            <li>Collaborated with a cross-functional Agile team to predict landing outcomes.</li>
-            <li>Documented acceptance criteria, mockups, and system requirements.</li>
-            <li>Performed validation analyses to ensure alignment with project goals.</li>
-          </ul>
+        <div className="projects-container">
+          <div className="project-box">
+            <div className="project-image">
+              <img
+                src={`${process.env.PUBLIC_URL}/map.png`}
+                alt="Credit Card Fraud Detection Map"
+              />
+            </div>
+            <div className="project-details">
+              <h3>Credit Card Fraud Detection Enhancement</h3>
+              <ul>
+                <li>Integrated geospatial analysis, reducing false positives by 25%.</li>
+                <li>Utilized Azure Databricks and PySpark for faster model training.</li>
+                <li>Documented system requirements and test cases for stakeholder review.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="project-box">
+            <div className="project-image">
+              <img
+                src={`${process.env.PUBLIC_URL}/Spacex.png`}
+                alt="SpaceX Falcon 9 Prediction"
+              />
+            </div>
+            <div className="project-details">
+              <h3>SpaceX Falcon 9 First Stage Landing Prediction</h3>
+              <ul>
+                <li>Collaborated with a cross-functional Agile team to predict landing outcomes.</li>
+                <li>Documented acceptance criteria, mockups, and system requirements.</li>
+                <li>Performed validation analyses to ensure alignment with project goals.</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
