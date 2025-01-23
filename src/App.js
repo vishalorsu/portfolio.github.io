@@ -153,10 +153,30 @@ const App = () => {
       <section id="skills" className="section">
         <h2>Skills</h2>
         <div className="skills-grid">
-          {/* Skills List */}
           <div className="skill-box">React JS</div>
           <div className="skill-box">Python</div>
-          {/* Add more as needed */}
+          <div className="skill-box">R</div>
+          <div className="skill-box">SQL</div>
+          <div className="skill-box">Java</div>
+          <div className="skill-box">PostgreSQL</div>
+          <div className="skill-box">RDBMS</div>
+          <div className="skill-box">Redshift</div>
+          <div className="skill-box">MySQL</div>
+          <div className="skill-box">Power BI</div>
+          <div className="skill-box">Tableau</div>
+          <div className="skill-box">Plotly</div>
+          <div className="skill-box">Matplotlib</div>
+          <div className="skill-box">TensorFlow</div>
+          <div className="skill-box">Keras</div>
+          <div className="skill-box">scikit-learn</div>
+          <div className="skill-box">Pandas</div>
+          <div className="skill-box">PySpark</div>
+          <div className="skill-box">Databricks</div>
+          <div className="skill-box">AWS S3</div>
+          <div className="skill-box">Snowflake</div>
+          <div className="skill-box">Azure DevOps</div>
+          <div className="skill-box">Jira</div>
+          <div className="skill-box">SharePoint</div>
         </div>
       </section>
 
@@ -166,8 +186,36 @@ const App = () => {
         <form action="mailto:vishalorsu3@gmail.com" method="POST" enctype="multipart/form-data">
           <div className="form-group">
             <label htmlFor="name">Your Name*</label>
-            <input type="text" id="name" name="name" required placeholder="Enter your name" />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
           </div>
+
+          <div className="form-group">
+            <label htmlFor="email-phone">Email/Phone Number*</label>
+            <input
+              type="text"
+              id="email-phone"
+              name="email-phone"
+              required
+              placeholder="Enter your email or phone number"
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Enter your message"
+              rows="5"
+            ></textarea>
+          </div>
+
           <button type="submit" className="cta-button">Send Message</button>
         </form>
       </section>
